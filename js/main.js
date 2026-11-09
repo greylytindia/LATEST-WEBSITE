@@ -26,7 +26,7 @@
     /* ---------------------------------------------------------
        REUSABLE HTML HELPERS AND PROJECT CARDS
        --------------------------------------------------------- */
-    function image(url, alt, cls = '') { return `<img class="${cls}" src="${url}" alt="${alt || ''}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80'">`; }
+    function image(url, alt, cls = '') { return `<img class="${cls}" src="${url}" alt="${alt || ''}" loading="eager" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80'">`; }
     function projectCard(p, i) { return `<a class="project-card reveal ${i % 3 === 1 ? 'project-card-tall' : ''}" href="project.html?id=${encodeURIComponent(p.id)}"><div class="project-image">${image(p.image, p.alt)}<span class="image-arrow">↗</span></div><div class="project-meta"><div><p class="project-category">${p.category} <span>·</span> ${p.location.split('·')[0].trim()}</p><h3>${p.title}</h3></div><span class="project-number">0${i + 1}</span></div></a>`; }
     /* ---------------------------------------------------------
        INTERACTIVE PROJECT RAIL / CAROUSEL
