@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Start a conversation with GREYLYT about architectural lighting design and consultancy." name="description"/>
+  <title>
+   Start a Project &mdash; GREYLYT
+  </title>
+  <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <script defer="" src="js/data.js">
+  </script>
+  <script defer="" src="js/main.js">
+  </script>
+ </head>
+ <body data-page="contact">
+  <div id="site-header">
+  </div>
+  <main>
+   <section class="contact-hero">
+    <div class="wrap contact-hero-grid">
+     <div>
+      <p class="eyebrow reveal">
+       CONTACT / START SOMETHING GOOD
+      </p>
+      <h1 class="display reveal">
+       Tell us what
+       <br/>
+       <em>
+        you're imagining.
+       </em>
+      </h1>
+      <p class="contact-lead reveal">
+       A home, a hospitality space, a retail experience or a collaboration. Share a little context and we'll take it from there.
+      </p>
+      <div class="contact-direct reveal">
+       <a href="mailto:hello@greylyt.com">
+        hello@greylyt.com
+        <span>
+         &nearrow;
+        </span>
+       </a>
+       <a href="https://www.instagram.com/greylyt/" rel="noreferrer" target="_blank">
+        Instagram
+        <span>
+         &nearrow;
+        </span>
+       </a>
+      </div>
+      <p class="placeholder-note">
+       Update the email and social links in
+       <code>
+        js/data.js
+       </code>
+       before publishing if your preferred contact details differ.
+      </p>
+     </div>
+     <div class="form-panel reveal">
+      <p class="eyebrow">
+       PROJECT ENQUIRY
+      </p>
+      <form action="contact-success.html" data-netlify="true" id="enquiry-form" method="POST" name="project-enquiry" netlify-honeypot="bot-field">
+       <input name="form-name" type="hidden" value="project-enquiry"/>
+       <p class="hidden-field">
+        <label>
+         Don't fill this out:
+         <input name="bot-field"/>
+        </label>
+       </p>
+       <div class="form-row">
+        <label>
+         Your name *
+         <input autocomplete="name" name="name" placeholder="Name" required=""/>
+        </label>
+        <label>
+         Email address *
+         <input autocomplete="email" name="email" placeholder="you@company.com" required="" type="email"/>
+        </label>
+       </div>
+       <div class="form-row">
+        <label>
+         Company / studio
+         <input autocomplete="organization" name="company" placeholder="Optional"/>
+        </label>
+        <label>
+         Project type *
+         <select name="projectType" required="">
+          <option disabled="" selected="" value="">
+           Select a type
+          </option>
+          <option>
+           Residential
+          </option>
+          <option>
+           Hospitality
+          </option>
+          <option>
+           Retail
+          </option>
+          <option>
+           Commercial
+          </option>
+          <option>
+           Experience space
+          </option>
+          <option>
+           Other / collaboration
+          </option>
+         </select>
+        </label>
+       </div>
+       <div class="form-row">
+        <label>
+         Project location
+         <input name="location" placeholder="City, country"/>
+        </label>
+        <label>
+         Approx. area
+         <input name="area" placeholder="e.g. 2,500 sq.ft"/>
+        </label>
+       </div>
+       <label>
+        Tell us about the project *
+        <textarea name="message" placeholder="The space, the ambition, the timeline&hellip;" required="" rows="4"></textarea>
+       </label>
+       <label class="consent">
+        <input name="consent" required="" type="checkbox"/>
+        <span>
+         I agree that GREYLYT may use these details to respond to my enquiry.
+        </span>
+       </label>
+       <button class="button button-dark form-submit" type="submit">
+        Send project enquiry
+        <span>
+         &nearrow;
+        </span>
+       </button>
+       <p class="form-footnote">
+        This form is configured for Netlify Forms. If you host elsewhere, follow the setup notes in README.md before relying on submissions.
+       </p>
+      </form>
+     </div>
+    </div>
+   </section>
+   <section class="collab-band">
+    <div class="wrap collab-band-inner">
+     <p class="eyebrow">
+      FOR ARCHITECTS &amp; INTERIOR DESIGNERS
+     </p>
+     <h2 class="display">
+      Good collaboration
+      <br/>
+      <em>
+       starts early.
+      </em>
+     </h2>
+     <a class="text-link" href="mailto:hello@greylyt.com?subject=GREYLYT%20Collaboration">
+      Discuss a collaboration
+      <span>
+       &nearrow;
+      </span>
+     </a>
+    </div>
+   </section>
+  </main>
+  <div id="site-footer">
+  </div>
+ </body>
+</html>
+
