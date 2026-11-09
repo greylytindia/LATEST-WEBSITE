@@ -170,7 +170,7 @@ async function softNavigate(href, addHistory = true) {
         }
 
         const updatePage = () => {
-            current.innerHTML = incoming.innerHTML;
+            current.replaceWith(incoming);
 
             document.body.dataset.page =
                 parsed.body.dataset.page || 'home';
